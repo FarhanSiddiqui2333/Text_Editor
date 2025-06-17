@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="editing">
+        <div class="sizeSec">
+          <div class="fontSize">
+            <img src="assest/size.png" alt="" class="fontIco" />
+            <div class="size">
+              <button>Font Size</button>
+              <button onclick="adjustSize_11()">11px</button>
+              <button onclick="adjustSize_12()">12px</button>
+              <button onclick="adjustSize_14()">14px</button>
+              <button onclick="adjustSize_16()">16px</button>
+              <button onclick="adjustSize_18()">18px</button>
+              <button onclick="adjustSize_20()">20px</button>
+              <button onclick="adjustSize_22()">22px</button>
+              <button onclick="adjustSize_24()">24px</button>
+              <button onclick="adjustSize_28()">28px</button>
+              <button onclick="adjustSize_34()">34px</button>
+              <button onclick="adjustSize_38()">38px</button>
+              <button onclick="adjustSize_46()">46px</button>
+              <button onclick="adjustSize_56()">56px</button>
+              <button onclick="adjustSize_68()">68px</button>
+              <button onclick="adjustSize_72()">72px</button>
+              <button onclick="adjustSize_100()">100px</button>
+            </div>
+            <img src="assest/down-arrow.png" alt="" class="drop" />
+          </div>
+        </div>
+        <div class="styleSec">
+          <div class="fontfamily">
+            <img src="assest/typography.png" alt="" class="fontIco" />
+            <div class="style">
+              <button onclick="">Font Style</button>
+              <button onclick="adjustStyle_cursive()">Cursive</button>
+              <button onclick="adjustStyle_nunito()">Nunito</button>
+              <button onclick="adjustStyle_poppins()">Poppins</button>
+              <button onclick="adjustStyle_impact()">Impact</button>
+              <button onclick="adjustStyle_arial()">Arial</button>
+              <button onclick="adjustStyle_curier()">Courier New</button>
+              <button onclick="adjustStyle_frankiln()">Franklin Gothic</button>
+              <button onclick="adjustStyle_goergia()">Georgia</button>
+              <button onclick="adjustStyle_comberia()">Comberia</button>
+              <button onclick="adjustStyle_gillsans()">Gill Sans</button>
+            </div>
+            <img src="assest/down-arrow.png" alt="" class="drop" />
+          </div>
+        </div>
+        <div class="styleSec">
+          <div class="fontfamily">
+            <img src="assest/text.png" alt="" class="fontIco" />
+            <div class="style">
+              <button>Font Colors</button>
+              <button onclick="adjustColor_green()">Green</button>
+              <button onclick="adjustColor_yellow()">Yellow</button>
+              <button onclick="adjustColor_blue()">Blue</button>
+              <button onclick="adjustColor_pink()">Pink</button>
+              <button onclick="adjustColor_purple()">Purple</button>
+              <button onclick="adjustColor_seagreen()">Seagreen</button>
+              <button onclick="adjustColor_aqua()">Aqua</button>
+              <button onclick="adjustColor_slategrey()">Slate Gray</button>
+              <button onclick="adjustColor_slateblue()">Slate Blue</button>
+              <button onclick="adjustColor_white()">White</button>
+              <button onclick="adjustColor_black()">Black</button>
+              <button onclick="adjustColor_orange()">Orange</button>
+            </div>
+            <img src="assest/down-arrow.png" alt="" class="drop" />
+          </div>
+        </div>
+        <div class="sizeSec">
+          <div class="fontSize">
+            <img src="assest/font-design.png" alt="" class="fontIco" />
+            <div class="size">
+              <button>Font Weight</button>
+              <button onclick="adjustWeight_100()">100</button>
+              <button onclick="adjustWeight_200()">200</button>
+              <button onclick="adjustWeight_300()">300</button>
+              <button onclick="adjustWeight_400()">400</button>
+              <button onclick="adjustWeight_500()">500</button>
+              <button onclick="adjustWeight_600()">600</button>
+              <button onclick="adjustWeight_700()">700</button>
+              <button onclick="adjustWeight_800()">800</button>
+              <button onclick="adjustWeight_900()">900</button>
+            </div>
+            <img src="assest/down-arrow.png" alt="" class="drop" />
+          </div>
+        </div>
+        <div class="sizeSec">
+          <div class="fontSize">
+            <img src="assest/pivot.png" alt="" class="fontIco" />
+            <div class="size">
+              <button>Rotate</button>
+              <button onclick="adjustrotate_0deg()">0<sup>o</sup> deg</button>
+              <button onclick="adjustrotate_45deg()">45<sup>o</sup> deg</button>
+              <button onclick="adjustrotate_90deg()">90<sup>o</sup> deg</button>
+              <button onclick="adjustrotate_135deg()">
+                135<sup>o</sup> deg
+              </button>
+              <button onclick="adjustrotate_180deg()">
+                180<sup>o</sup> deg
+              </button>
+              <button onclick="adjustrotate_225deg()">
+                225<sup>o</sup> deg
+              </button>
+              <button onclick="adjustrotate_270deg()">
+                270<sup>o</sup> deg
+              </button>
+              <button onclick="adjustrotate_320deg()">
+                320<sup>o</sup> deg
+              </button>
+              <button onclick="adjustrotate_360deg()">
+                360<sup>o</sup> deg
+              </button>
+            </div>
+            <img src="assest/down-arrow.png" alt="" class="drop" />
+          </div>
+        </div>
+        <div class="styleSec">
+          <div class="fontfamily">
+            <img src="assest/font.png" alt="" class="fontIco" />
+            <div class="style">
+              <button>Decoration</button>
+              <button onclick="adjustdeco_none()">Normal</button>
+              <button onclick="adjustdeco_underline()">Underline</button>
+              <button onclick="adjustdeco_overline()">Overline</button>
+              <button onclick="adjustdeco_linethrough()">Line Through</button>
+              <button onclick="adjustdeco_italic()">Italic</button>
+            </div>
+            <img src="assest/down-arrow.png" alt="" class="drop" />
+          </div>
+        </div>
+      </div>
+      <div class="view">
+        <label>
+          <input
+            type="text"
+            placeholder="Type what you want to edit..."
+            id="input"
+          />
+          <button id="start">
+            <img src="assest/up-and-down-arrow.png" alt="" />
+          </button>
+        </label>
+        <div class="layer">
+          <div>
+            <button popovertarget="pop"></button>
+            <img src="assest/crown.png" alt="" />
+          </div>
+          <div></div>
+        </div>
+        <div class="btn">
+          <button><img src="assest/copy.png" alt="" class="copy" /></button>
+          <button onclick="saveWork()">
+            Save <img src="assest/thumbs-up (1).png" alt="" />
+          </button>
+        </div>
+
+        <p id="pop" popover="auto">
+          <span>Upgrade your Plane!</span>
+          <br />
+          upgrade your plane to premium with us to <br />
+          get more editing features and interesting things.
+          <br />
+          Thank for your Anticipation
+          <br />
+          <span class="please">please login first</span>
+        </p>
+
+        <h1 id="txt">Write Something</h1>
+        <div class="remove">Join Our Premium Plane Thanks!</div>
+        <p class="remove bot">
+          Your have 5 times to save edited text and if you want more then join
+          ou Premium Plane!
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
